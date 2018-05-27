@@ -1,0 +1,50 @@
+body{
+  background: black;
+}
+.modal{
+  width:500px;
+  height:350px;
+  left:50%;
+  margin-top:10%;
+  border-radius: 10px;
+  position:fixed;
+  transform-origin: center;
+  display:flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 16px 5px rgba(0,0,0,0.1);
+  background:white;
+
+}
+
+.modal-header{
+ border-top-left-radius: 10px;
+ border-top-right-radius: 10px;
+ background-color: tomato;
+ color:white;
+ display:flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 3em;
+ font-weight: 900;
+ padding:0.5em;
+}
+
+.modal-body{
+  padding:1em;
+  font-size: 2em;
+}
+
+.before{
+
+  transform: translate(-50%, -150%);
+  transition: transform 0.1s linear;
+}
+
+.after{
+  transform: translate(-50%, 0);
+  transition: transform 0.3s cubic-bezier(0.0, 3, 0.0, -0.5);
+}
+
+.bye{
+  display:none;
+}
